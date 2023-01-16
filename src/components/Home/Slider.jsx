@@ -14,7 +14,7 @@ import Button from "../../common/Button";
 
 const Slider = () => {
   return (
-    <section className="py-[100px] bg-[#080709]">
+    <section className="ninetynine_x_slider py-[100px] bg-[#080709]">
       <div>
         <div className="max-w-[659px] mx-auto text-center pb-[100px]">
           <span className="text__style tracking-[0.2em] font-bold">
@@ -28,15 +28,17 @@ const Slider = () => {
         {/* slider code */}
         <div>
           <Swiper
-            slidesPerView={3}
+            slidesPerView={2.4}
             spaceBetween={30}
-            slidesPerGroup={1}
+            centeredSlides={true}
             loop={true}
             pagination={{
               clickable: true,
+              type: "fraction"
             }}
             navigation={true}
             modules={[Pagination, Navigation]}
+           
             className="mySwiper "
           >
             <SwiperSlide className="slider__item !bg-opacity-10">
@@ -44,7 +46,7 @@ const Slider = () => {
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10 ">
               <img src={sliderImg} alt="" className="w-full " />
-              <div className="w-full h-full absolute left-[0%] top-[1%] text-left  p-[30px] bg-[#1B1A1C] !rounded-[30px] z-10">
+              <div className="slide_content_box absolute left-[0%] top-[0%] text-left p-[30px] bg-[#1B1A1C] !rounded-[30px] z-10">
                 <div className="">
                   <h2 className="text-[#E1E2EE] text-[25px] leading-[35px] font-medium p-2 mt-[10px] mb-[20px]">
                     Mutant Women Ape YC
@@ -60,7 +62,7 @@ const Slider = () => {
                     </div>
                     <div>
                       <span className="text-[#B4B5BD] opacity-70 leading-[25.6px]">
-                        Mint Date
+                        Total Supply
                       </span>
                       <h4 className="text-[#E1E2EE] text-[18px] font-medium leading-[27px]">
                         18 Jan 2023
@@ -68,10 +70,10 @@ const Slider = () => {
                     </div>
                     <div>
                       <span className="text-[#B4B5BD] opacity-70 leading-[25.6px]">
-                        Mint Date
+                        Publit Mint Price
                       </span>
                       <h4 className="text-[#E1E2EE] text-[18px] font-medium leading-[27px]">
-                        18 Jan 2023
+                        0.08 ETH
                       </h4>
                     </div>
                   </div>
@@ -122,6 +124,12 @@ const Slider = () => {
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
               Slide 9
+            </SwiperSlide>
+            <SwiperSlide className="slider__item !bg-opacity-10">
+              Slide 10
+            </SwiperSlide>
+            <SwiperSlide className="slider__item !bg-opacity-10">
+              Slide 11
             </SwiperSlide>
           </Swiper>
         </div>

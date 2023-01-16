@@ -5,3 +5,15 @@
 body {
   font-family: "Satoshi", sans-serif;
 }
+.font-mono {
+  font-family: "Satoshi", sans-serif;
+}
+
+.ninetynine_x_slider .swiper-horizontal > .swiper-pagination-bullets,
+.ninetynine_x_slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+.ninetynine_x_slider .swiper-pagination-custom,
+.ninetynine_x_slider .swiper-pagination-fraction {
+  text-align: right;
+  left: auto;
+  right: 15%;
+}

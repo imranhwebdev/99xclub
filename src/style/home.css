@@ -14,6 +14,15 @@
     #4c63f1 1.94%,
     #7d32eb 103.28%
   ) !important;
+  transition: all .3s ease-in-out;
+}
+.button__style:hover {
+  background: linear-gradient(
+    87.44deg,
+    #fff 1.94%,
+    #fff 103.28%
+  ) !important;
+  color: #4c63f1;
 }
 .shape__top {
   background: linear-gradient(87.44deg, #4c63f1 1.94%, #7d32eb 103.28%);
@@ -195,4 +204,32 @@ details[open] summary p {
     padding: 11px;
     left: -9px;
   }
+}
+.ninetynine_x_slider .swiper-wrapper{
+  padding-bottom: 130px;
+}
+.slide_content_box {
+  width: 92%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 85px;
+}
+
+.ninetynine_x_slider .swiper-button-prev, .ninetynine_x_slider .swiper-button-next {
+  left: 40px;
+  right: auto;
+  width: 66px;
+  height: 66px;
+  transition: 0.5s;
+  background: rgba(225, 226, 238, 0.1);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 26px !important;
+}
+.ninetynine_x_slider .swiper-button-prev:hover, .ninetynine_x_slider .swiper-button-next:hover {
+  background: linear-gradient(87.44deg, #4C63F1 1.94%, #7D32EB 103.28%);
+}
+.ninetynine_x_slider .swiper-button-next {
+  left: auto;
+  right: 40px !important;
 }
