@@ -28,7 +28,7 @@ const Slider = () => {
         {/* slider code */}
         <div>
           <Swiper
-            slidesPerView={2}
+            slidesPerView={3}
             spaceBetween={30}
             slidesPerGroup={1}
             loop={true}
