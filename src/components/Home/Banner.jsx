@@ -1,9 +1,44 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import Button from "../../common/Button";
 import bg from "../../assets/images/bg.png";
 import bgAfter from "../../assets/images/bg-hero-after.png";
 
 const Banner = () => {
+  const [countdownDate] = useState(new Date("Jan 21, 2023 20:30:00").getTime());
+  const [state, setState] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+  useEffect(() => {
+    setInterval(() => setNewTime(), 1000);
+  }, []);
+
+  const setNewTime = () => {
+    if (countdownDate) {
+      const currentTime = new Date().getTime();
+      const distanceToDate = countdownDate - currentTime;
+      let days = Math.floor(distanceToDate / (1000 * 60 * 60 * 24));
+      let hours = Math.floor(
+        (distanceToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      let minutes = Math.floor(
+        (distanceToDate % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      let seconds = Math.floor((distanceToDate % (1000 * 60)) / 1000);
+      const numbersToAddZeroTo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      days = `${days}`;
+      if (numbersToAddZeroTo.includes(hours)) {
+        hours = `0${hours}`;
+      } else if (numbersToAddZeroTo.includes(minutes)) {
+        minutes = `0${minutes}`;
+      } else if (numbersToAddZeroTo.includes(seconds)) {
+        seconds = `0${seconds}`;
+      }
+      setState({ days: days, hours: hours, minutes, seconds });
+    }
+  };
   return (
     <section
       style={{
@@ -54,15 +89,16 @@ const Banner = () => {
             <div className="grid grid-flow-col gap-2 sm:gap-5 text-center auto-cols-max justify-center mt-[33px] px-4">
               <div className="flex flex-col pr-[32px] border-r-[1px] border-white border-opacity-40">
                 <span className="leading-[60px] text-white font-medium countdown font-mono text-2xl sm:text-5xl">
-                  <span style={{ "--value": "05" }}></span>
+                  {state.days > 0 ? state.days : "0"}
                 </span>
+                
                 <span className="text-[#B4B5BD] opacity-70 text-base leading-[19px] font-normal">
                   days
                 </span>
               </div>
               <div className="flex flex-col pl-[26px] pr-[30px] border-r-[1px] border-white border-opacity-40">
                 <span className="leading-[60px] text-white font-medium countdown font-mono text-2xl sm:text-5xl">
-                  <span style={{ "--value": "02" }}></span>
+                  {state.hours > 0 ? state.hours : "00"}
                 </span>
                 <span className="text-[#B4B5BD] opacity-70 text-base leading-[19px] font-normal">
                   hours
@@ -70,7 +106,7 @@ const Banner = () => {
               </div>
               <div className="flex flex-col pl-[26px] pr-[30px] border-r-[1px] border-white border-opacity-40">
                 <span className=" text-white font-medium countdown font-mono text-2xl sm:text-5xl">
-                  <span style={{ "--value": 50 }}></span>
+                {state.minutes > 0 ? state.minutes : "00"}
                 </span>
                 <span className="text-[#B4B5BD] opacity-70 text-base leading-[19px] font-normal">
                   min
@@ -78,7 +114,7 @@ const Banner = () => {
               </div>
               <div className="flex flex-col pl-[29px]">
                 <span className="leading-[60px] text-white font-medium countdown font-mono text-2xl sm:text-5xl">
-                  <span style={{ "--value": "00" }}></span>
+                {state.seconds > 0 ? state.seconds : "00"}
                 </span>
                 <span className="text-[#B4B5BD] opacity-70 text-base leading-[19px] font-normal">
                   sec

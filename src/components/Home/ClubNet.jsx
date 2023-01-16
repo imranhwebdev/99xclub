@@ -18,7 +18,7 @@ const ClubNet = () => {
         <div className="grid grid-cols-9 justify-center items-center">
           <div className="col-span-9 lg:col-span-4  ">
             <div className="w-full md:mt-[-23%] lg:-mt-[52%] z-20 relative">
-              <img src={img} alt="" className="w-3/4 mx-auto" />
+              <img src={img} alt="" className="w-3/4" />
             </div>
           </div>
           <div className="col-span-9 lg:col-span-5 sm:mt-0 my-6">
