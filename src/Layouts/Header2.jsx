@@ -57,7 +57,7 @@ const Nav = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
+          className="text-3xl absolute right-8 cursor-pointer lg:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
