@@ -2,9 +2,7 @@
   display: block;
   width: 100%;
 } */
-html, html body{
-  scroll-behavior: smooth;
-}
+
 .dropdown .dropdown-content {
   margin-top: 50px !important;
   width: 13rem !important;
@@ -361,10 +359,10 @@ footer .site-logo {
   font-size: 16px;
   line-height: 160%;
   color: #9e9ea6;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .main_menu li:hover a {
-  color: #E1E2EE;
+  color: #e1e2ee;
 }
 @media (max-width: 1024px) {
   .main_menu {
