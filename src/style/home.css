@@ -2,7 +2,9 @@
   display: block;
   width: 100%;
 } */
-
+html, html body{
+  scroll-behavior: smooth;
+}
 .dropdown .dropdown-content {
   margin-top: 50px !important;
   width: 13rem !important;

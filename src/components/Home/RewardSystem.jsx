@@ -5,7 +5,10 @@ import membership from "../../assets/images/membersip bg.png";
 
 const RewardSystem = () => {
   return (
-    <section className="pt-[100px] pb-[69px] relative bg-[#100F11]">
+    <section
+      className="pt-[100px] pb-[69px] relative bg-[#100F11]"
+      id="rewards"
+    >
       <div
         style={{
           background: `url('${membership}')`,

@@ -3,7 +3,7 @@ import React from "react";
 const Accordion = () => {
   return (
     <section className="pt-[100px] pb-[1px] bg-[#080709]">
-      <div className="max-w-[1020px] mx-auto">
+      <div className="max-w-[1020px] mx-auto" id="faq">
         <details class="w-full bg-[#080709]  cursor-pointer mb-3">
           <summary class="w-full bg-[#080709] text-[#B4B5BD] text-[25px] flex justify-between px-[20px] py-[31px]  after:content-['+']">
             What is the 99x Club Membership?

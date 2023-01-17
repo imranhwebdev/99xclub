@@ -14,7 +14,7 @@ import Button from "../../common/Button";
 
 const Slider = () => {
   return (
-    <section className="ninetynine_x_slider py-[100px] bg-[#080709]">
+    <section className="ninetynine_x_slider py-[100px] bg-[#080709]" id="affiliates">
       <div>
         <div className="section_title max-w-[659px] mx-auto text-center pb-[50px] md:pb-[100]">
           <span className="text__style tracking-[0.2em] font-bold">

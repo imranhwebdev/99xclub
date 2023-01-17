@@ -6,11 +6,11 @@ const Nav = () => {
   const [isTrue, setTrue] = React.useState(false);
   const ref = useRef(null);
   let Links = [
-    { name: "Membership", link: "/" },
-    { name: "Rewards", link: "/" },
-    { name: "Affiliates", link: "/" },
-    { name: "Services", link: "/" },
-    { name: "FAQ", link: "/" },
+    { name: "Membership", link: "#membership" },
+    { name: "Rewards", link: "#rewards" },
+    { name: "Affiliates", link: "#affiliates" },
+    { name: "Services", link: "#services" },
+    { name: "FAQ", link: "#faq" },
   ];
   let [open, setOpen] = useState(false);
 

@@ -5,7 +5,7 @@ import rocket from "../../assets/images/rocket.png";
 
 const BenefitsOfMinting = () => {
   return (
-    <section className="benefits_of_minting_area pt-[70px] py-[40px] sm:py-[80px] md:pt-[165px] md:pb-[60px] relative">
+    <section className="benefits_of_minting_area pt-[70px] py-[40px] sm:py-[80px] md:pt-[165px] md:pb-[60px] relative" id="services">
       <div className="max-w-[1125px] mx-auto py-4 px-4 md:px-0 ">
         <div>
           <div className=" w-[300px] lg:w-[446px]  h-[300px] lg:h-[446px] rounded-[50%] shape__top absolute right-[2%] top-[8%] opacity-50"></div>
