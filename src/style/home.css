@@ -273,3 +273,8 @@ details[open] summary p {
     height: auto;
   }
 }
+
+/*Benefits of minting*/
+.bm_content_box{
+  margin-top: -45px;
+}

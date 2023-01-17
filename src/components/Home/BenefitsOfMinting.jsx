@@ -5,7 +5,7 @@ import rocket from "../../assets/images/rocket.png";
 
 const BenefitsOfMinting = () => {
   return (
-    <section className="bg-[#1E1E1E] py-[40px] sm:py-[80px] md:pt-[200px] md:pb-[108px] relative">
+    <section className="py-[40px] sm:py-[80px] md:pt-[200px] md:pb-[108px] relative">
       <div className="max-w-[1125px] mx-auto py-4 px-4 md:px-0 ">
         <div>
           <div className=" w-[300px] lg:w-[446px]  h-[300px] lg:h-[446px] rounded-[50%] shape__top absolute right-[2%] top-[8%] opacity-50"></div>
@@ -24,7 +24,7 @@ const BenefitsOfMinting = () => {
                 <div className="">
                   <img className="mx-auto" src={ExclusiveAccess} alt="" />
                 </div>
-                <div>
+                <div className="bm_content_box">
                   <h3 className="text-[#E1E2EE] text-[24px] leading-[28px] md:text-[32px] md:leading-[44px] font-bold mb-[20px]">
                     Exclusive Access
                   </h3>
@@ -41,7 +41,7 @@ const BenefitsOfMinting = () => {
                 <div className="">
                   <img className="mx-auto" src={ExclusiveRewards} alt="" />
                 </div>
-                <div>
+                <div className="bm_content_box">
                   <h3 className="text-[#E1E2EE] text-[24px] leading-[28px] md:text-[32px] md:leading-[44px] font-bold mb-[20px]">
                     Exclusive Rewards
                   </h3>
@@ -58,7 +58,7 @@ const BenefitsOfMinting = () => {
               <div className="w-[181px] h-[181px] mx-auto">
                 <img className="mx-auto" src={rocket} alt="" />
               </div>
-              <div className="p-5 -mt-[46px]">
+              <div className="p-5 -mt-[60px]">
                 <h3 className="text-[#E1E2EE] text-[24px] leading-[28px] md:text-[32px] md:leading-[44px] font-bold mb-[20px]">
                   99xClub Metaverse
                 </h3>
