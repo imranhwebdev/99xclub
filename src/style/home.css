@@ -1,3 +1,4 @@
+
 /* .dropdown {
   display: block;
   width: 100%;
@@ -232,4 +233,43 @@ details[open] summary p {
 .ninetynine_x_slider .swiper-button-next {
   left: auto;
   right: 40px !important;
+}
+.club_net_content{
+  padding-top: 90px;
+  padding-bottom: 95px;
+}
+.club_net_img{
+  max-width: 564px;
+  height: 564px;
+  object-fit: contain;
+  width: 100%;
+  padding-right: 45px;
+}
+
+@media(max-width:1024px){
+  .club_net_content{
+    padding-top: 50px;
+    text-align: center;
+  }
+  .club_net_img{
+   margin: 0 auto;
+   padding: 0;
+  }
+  .club_net_shap{
+    background-size: contain;
+    background-position: bottom left !important;
+  }
+  
+}
+
+@media(max-width:767px){
+  .club_net_img{
+    padding-top: 30px;
+  }
+}
+
+@media(max-width:576px){
+  .club_net_img{
+    height: auto;
+  }
 }
