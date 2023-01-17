@@ -397,3 +397,10 @@ footer .site-logo {
     padding-top: 70px;
   }
 }
+
+@media(max-width:767px){
+  #rewards p{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

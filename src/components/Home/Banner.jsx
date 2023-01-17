@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
+import AOS from "aos";
 import Button from "../../common/Button";
 import bg from "../../assets/images/bg.png";
 import bgAfter from "../../assets/images/bg-hero-after.png";
 
 const Banner = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+
+}, []);
   const [countdownDate] = useState(new Date("Jan 21, 2023 20:30:00").getTime());
   const [state, setState] = useState({
     days: 0,
@@ -65,25 +71,25 @@ const Banner = () => {
         <div className="max-w-[683px] mx-auto  px-4 md:px-0 text-center  py-[70px] lg:pt-[200px] lg:pb-[146px]">
           <div>
             <div>
-              <span className="text__style text-[16px] font-medium leading-[25px]">
+              <span className="text__style text-[16px] font-medium leading-[25px]" data-aos="fade-up" data-aos-duration="600">
                 One Stop Solution for NFTs (Lifetime Pass)!
               </span>
-              <h2 className="text-[#E1E2EE] text-[20px] leading-[24px] sm:text-[30px] sm:leading-[33px] md:text-[61px] font-black md:leading-[73.2px] mt-[10px]">
+              <h2 className="text-[#E1E2EE] text-[20px] leading-[24px] sm:text-[30px] sm:leading-[33px] md:text-[61px] font-black md:leading-[73.2px] mt-[10px]" data-aos="fade-up" data-aos-duration="700">
                 Genesis Edition Digital Membership Pass
               </h2>
-              <p className=" text-[#B4B5BD] font-normal text-base leading-[25.6px] mt-[20px] max-w-[497px] mx-auto">
+              <p className=" text-[#B4B5BD] font-normal text-base leading-[25.6px] mt-[20px] max-w-[497px] mx-auto" data-aos="fade-up" data-aos-duration="800">
                 A private group of
                 <strong> 3333 dedicated NFT collectors</strong> and artists.
                 Membership to the collective and all of the benefits come from
                 holding the <strong> 99xClub Membership Pass. </strong>
               </p>
-              <Button classNames="py-[20px] px-[24px] mt-[40px]">
+              <Button classNames="py-[20px] px-[24px] mt-[40px]" data-aos="fade-up" data-aos-duration="900">
                 Mint your NFT
               </Button>
             </div>
           </div>
           <div className="mt-[63px]">
-            <p className="text-[#E1E2EE] text-[25px] leading-[35px] font-medium">
+            <p className="text-[#E1E2EE] text-[25px] leading-[35px] font-medium " data-aos="fade-up" data-aos-duration="1100">
               99xClub Pass Minting Starts In
             </p>
             <div className="grid grid-flow-col gap-2 sm:gap-5 text-center auto-cols-max justify-center mt-[33px] px-4">
