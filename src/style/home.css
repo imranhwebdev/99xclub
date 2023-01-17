@@ -329,3 +329,9 @@ footer .site-logo{
   margin:0 auto;
   display: block;
 }
+.social_icons a{
+  transition: all .3s ease;
+}
+.social_icons a:hover{
+  opacity: .5;
+}

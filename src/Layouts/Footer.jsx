@@ -3,7 +3,7 @@ import { BsDiscord, BsTwitter } from "react-icons/bs";
 import { FaTelegram } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 import bgAfter from "../assets/images/bg-hero-after.png";
-import siteLogo from "../assets/images/99x-logo.png"
+import siteLogo from "../assets/images/99x-logo.png";
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
             </a>
           </h2>
           <div>
-            <ul className="flex gap-[42px] mt-[49px] justify-center">
+            <ul className="social_icons flex gap-[42px] mt-[49px] justify-center">
               <li>
                 <a href="/" className="text-white text-[33px]">
                   <BsTwitter />
@@ -47,7 +47,8 @@ const Footer = () => {
               </li>
             </ul>
             <p className="mt-[39px] text-[#B4B5BD] leading-[25.6px]">
-              Copyright © 2023. 99x Club. All rights reserved.
+              Copyright © {new Date().getFullYear()}. 99x Club. All rights
+              reserved.
             </p>
           </div>
         </div>
