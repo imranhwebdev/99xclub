@@ -5,12 +5,12 @@ import rocket from "../../assets/images/rocket.png";
 
 const BenefitsOfMinting = () => {
   return (
-    <section className="py-[40px] sm:py-[80px] md:pt-[200px] md:pb-[108px] relative">
+    <section className="benefits_of_minting_area pt-[70px] py-[40px] sm:py-[80px] md:pt-[165px] md:pb-[60px] relative">
       <div className="max-w-[1125px] mx-auto py-4 px-4 md:px-0 ">
         <div>
           <div className=" w-[300px] lg:w-[446px]  h-[300px] lg:h-[446px] rounded-[50%] shape__top absolute right-[2%] top-[8%] opacity-50"></div>
           <div className=" w-[300px] lg:w-[446px]  h-[300px] lg:h-[446px] rounded-[50%] shape__bottom absolute left-[13%] bottom-[14%] opacity-30"></div>
-          <div className="max-w-[659px] mx-auto text-center pb-[50px] md:pb-[108px]">
+          <div className="max-w-[659px] mx-auto text-center pb-[75px]">
             <p className="text__style font-bold tracking-[0.2em]">
               MEMBERSHIP PASS
             </p>
@@ -53,7 +53,7 @@ const BenefitsOfMinting = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-[787px] mx-auto mt-[114px]">
+          <div className="max-w-[787px] mx-auto mt-[90px]">
             <div className="text-center">
               <div className="w-[181px] h-[181px] mx-auto">
                 <img className="mx-auto" src={rocket} alt="" />
