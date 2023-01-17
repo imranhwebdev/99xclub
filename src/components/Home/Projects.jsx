@@ -10,9 +10,9 @@ const Projects = () => {
         <div className="xl:flex gap-[90px] relative">
           <div className="w-full xl:max-w-[682px]">
             <span className="text__style tracking-[0.2em] mb-[10px] font-bold">
-              REWARD SYSTEM
+            99XCLUB SERVICES
             </span>
-            <h2 className="text-[#E1E2EE] sm:text-[32px] leading-[35px] md:text-[49px] md:leading-[58.8px] font-bold p-2 mt-[10px]  text-[25px] mb-[36px]">
+            <h2 className="text-[#E1E2EE] sm:text-[32px] leading-[35px] md:text-[49px] md:leading-[58.8px] font-bold pt-2 mt-[10px]  text-[25px] mb-[36px]">
               Have you ever wondered to launch your own NFT project?
             </h2>
             <p className="text-[#B4B5BD] opacity-80 text-[20px] leading-[30px] font-medium">

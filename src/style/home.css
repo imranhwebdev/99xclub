@@ -314,4 +314,6 @@ details[open] summary p {
     flex-wrap: wrap;
   }
 }
-
+.site-logo {
+  max-width: 90px;
+}

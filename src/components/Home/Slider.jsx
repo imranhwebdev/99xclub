@@ -77,7 +77,7 @@ const Slider = () => {
                         Mint Date
                       </span>
                       <h4 className="text-[#E1E2EE] text-[18px] font-medium leading-[27px]">
-                        18 Jan 2023
+                      03 'Feb' 2023
                       </h4>
                     </div>
                     <div className="item">
@@ -85,7 +85,7 @@ const Slider = () => {
                         Total Supply
                       </span>
                       <h4 className="text-[#E1E2EE] text-[18px] font-medium leading-[27px]">
-                        18 Jan 2023
+                      15,555
                       </h4>
                     </div>
                     <div className="item">
@@ -114,7 +114,7 @@ const Slider = () => {
                     </h4>
                   </div>
                   <div className="mt-[33px]">
-                    <Button classNames={"py-5 px-[35px]"}>Claim Now</Button>
+                    <Button classNames={"py-5 px-[35px]"}>Claim Soon</Button>
                   </div>
                 </div>
               </div>

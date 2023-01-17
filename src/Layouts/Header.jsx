@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Button from "../common/Button";
-
+import siteLogo from "../assets/images/99x-logo.png"
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isTrue, setTrue] = React.useState(false);
@@ -79,7 +79,9 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <a className="text-[#E1E2EE]">99X CLUB</a>
+            <a className="site-logo" href="/">
+              <img src={siteLogo} alt="" />
+            </a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
