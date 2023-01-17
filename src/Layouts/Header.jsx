@@ -1,10 +1,18 @@
-import React, { useEffect, useRef } from "react";
-import Button from "../common/Button";
-import siteLogo from "../assets/images/99x-logo.png"
-const Header = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+import React, { useEffect, useState, useRef } from "react";
+import siteLogo from "../assets/images/99x-logo.png";
+
+const Nav = () => {
+  const [setIsOpen] = React.useState(false);
   const [isTrue, setTrue] = React.useState(false);
   const ref = useRef(null);
+  let Links = [
+    { name: "Membership", link: "#membership" },
+    { name: "Rewards", link: "#rewards" },
+    { name: "Affiliates", link: "#affiliates" },
+    { name: "Services", link: "#services" },
+    { name: "FAQ", link: "#faq" },
+  ];
+  let [open, setOpen] = useState(false);
 
   useEffect(() => {
     // scrollHandler functionality
@@ -30,117 +38,51 @@ const Header = () => {
     };
   }, [ref, isTrue]);
   return (
-    <header
-      className={`
+    <div className={`
     ${
       isTrue
-        ? "header_area sticky left-0 top-0 !bg-[#100f11] bg-opacity-75 "
+        ? "Header_area sticky shadow-lg left-0 top-0 !bg-[#100f11] bg-opacity-75 "
         : "!bg-transparent bg-opacity-0 absolute top-0 left-0 w-full z-50"
     }  z-50 transition ease-in-out delay-150 `} 
     >
-      <div className="header_wrapper max-w-[1200px] mx-auto py-4 px-4 md:px-0">
-        <div className="navbar px-4">
-          <div className="navbar-start">
-            <nav ref={ref} className="dropdown ">
-              <ul
-                ref={ref}
-                tabIndex={0}
-                className={`menu bg-black menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 ${
-                  isOpen && "!visible !opacity-100 lg:hidden"
-                }`}
-              >
-                <li>
-                  <a className="text-[#E1E2EE] leading-[25.6px] ">Membership</a>
-                </li>
-                <li>
-                  <a className="font-normal text-[#9E9EA6] leading-[25.6px]">
-                    Rewards
-                  </a>
-                </li>
-                <li>
-                  <a className="font-normal text-[#9E9EA6] leading-[25.6px]">
-                    Affiliates
-                  </a>
-                </li>
-                <li>
-                  <a className="font-normal text-[#9E9EA6] leading-[25.6px]">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a className="font-normal text-[#9E9EA6] leading-[25.6px]">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <Button classNames={"ms:hidden py-2 px-[15px]"}>
-                    Mint NFT
-                  </Button>
-                </li>
-              </ul>
-            </nav>
-            <a className="site-logo" href="/">
-              <img src={siteLogo} alt="" />
-            </a>
-          </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
-              <li>
-                <a className="text-[#E1E2EE] leading-[25.6px] mx-[12px]">
-                  Membership
-                </a>
-              </li>
-              <li>
-                <a className="font-normal text-[#9E9EA6] leading-[25.6px]">
-                  Rewards
-                </a>
-              </li>
-              <li>
-                <a className="font-normal text-[#9E9EA6] leading-[25.6px]">
-                  Affiliates
-                </a>
-              </li>
-              <li>
-                <a className="font-normal text-[#9E9EA6] leading-[25.6px]">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a className="font-normal text-[#9E9EA6] leading-[25.6px]">
-                  FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="navbar-end">
-            <Button classNames={"hidden lg:block py-3 px-[25.15px]"}>
-              Mint NFT
-            </Button>
-            <label
-              ref={ref}
-              tabIndex={0}
-              className="btn btn-ghost lg:hidden"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block w-5 h-5 stroke-current text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </label>
-          </div>
+      <div className="flex items-center justify-between  py-4 md:px-10 px-7 max-w-[1230px] mx-auto">
+        <div
+          className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+      text-gray-800"
+        >
+          <a href="/" className="site-logo">
+            <img src={siteLogo} alt="" />
+          </a>
         </div>
+
+        <div
+          onClick={() => setOpen(!open)}
+          className="text-3xl absolute right-8 cursor-pointer lg:hidden"
+        >
+          <ion-icon name={open ? "close" : "menu"}></ion-icon>
+        </div>
+
+        <ul
+          className={`main_menu lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-12 transition-all duration-500 ease-in ${
+            open ? "top-20 " : "top-[-490px]"
+          }`}
+        >
+          {Links.map((link) => (
+            <li key={link.name} className="lg:ml-8 text-xl lg:my-0 my-7">
+              <a
+                href={link.link}
+                className="text-gray hover:text-gray-400 duration-500"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+          <a href="/" className="for_small_screen boxed_btn">Mint NFT</a>
+        </ul>
+        <a href="/" className="for_large_screen boxed_btn" >Mint NFT</a>
       </div>
-    </header>
+    </div>
   );
 };
 
-export default Header;
+export default Nav;
