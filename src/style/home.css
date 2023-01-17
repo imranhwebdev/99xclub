@@ -162,14 +162,16 @@ details[open] summary p {
 }
 
 .slider__item {
-  width: 492px !important;
-  height: 440px !important;
+  min-height: 440px;
   background: linear-gradient(
     87.44deg,
     rgba(77, 99, 241, 0.1) 1.94%,
     rgba(125, 50, 235, 0.1) 103.28%
   ) !important;
   border-radius: 30px !important;
+}
+@media(max-width:576px){
+  
 }
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   display: none;
@@ -225,6 +227,22 @@ details[open] summary p {
   background: rgba(225, 226, 238, 0.1);
   color: #fff;
   border-radius: 50%;
+  transform: translateY(-50%);
+}
+@media(max-width:576px){
+  .ninetynine_x_slider .swiper-button-prev, .ninetynine_x_slider .swiper-button-next {
+    top: auto;
+    bottom: -30px;
+  }
+  .ninetynine_x_slider .swiper-horizontal > .swiper-pagination-bullets, .ninetynine_x_slider .swiper-pagination-bullets.swiper-pagination-horizontal, .ninetynine_x_slider .swiper-pagination-custom, .ninetynine_x_slider .swiper-pagination-fraction {
+    text-align: center;
+    left: auto;
+    right: auto;
+    bottom: 22px;
+    z-index: -1;
+}
+}
+.ninetynine_x_slider .swiper-button-prev:after, .ninetynine_x_slider .swiper-button-next:after {
   font-size: 26px !important;
 }
 .ninetynine_x_slider .swiper-button-prev:hover, .ninetynine_x_slider .swiper-button-next:hover {
@@ -272,6 +290,9 @@ details[open] summary p {
   .club_net_img{
     height: auto;
   }
+  .mySwiper{
+    padding-bottom: 160px !important; 
+  }
 }
 
 /*Benefits of minting*/
@@ -288,4 +309,9 @@ details[open] summary p {
   .benefits_of_minting_area{
     padding-inline: 0px;
   }
+  .mtp_wrapper{
+    gap:20px;
+    flex-wrap: wrap;
+  }
 }
+

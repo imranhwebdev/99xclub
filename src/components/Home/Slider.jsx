@@ -16,7 +16,7 @@ const Slider = () => {
   return (
     <section className="ninetynine_x_slider py-[100px] bg-[#080709]">
       <div>
-        <div className="max-w-[659px] mx-auto text-center pb-[100px]">
+        <div className="section_title max-w-[659px] mx-auto text-center pb-[50px] md:pb-[100]">
           <span className="text__style tracking-[0.2em] font-bold">
             REWARD SYSTEM
           </span>
@@ -28,22 +28,42 @@ const Slider = () => {
         {/* slider code */}
         <div>
           <Swiper
-            slidesPerView={2.4}
             spaceBetween={30}
+            slidesPerView={2.4}
             centeredSlides={true}
             loop={true}
             pagination={{
               clickable: true,
-              type: "fraction"
+              type: "fraction",
             }}
             navigation={true}
             modules={[Pagination, Navigation]}
-           
+            breakpoints={{
+              "360": {
+                slidesPerView: 1,
+                centeredSlides:false,
+                spaceBetween: 10,
+                loop:false
+              },
+              "576": {
+                slidesPerView: 1.2,
+                centeredSlides:false,
+              },
+              "768": {
+                slidesPerView: 1.6,
+              },
+              "992": {
+                slidesPerView: 1.8,
+              },
+              "1200": {
+                slidesPerView: 2,
+              },
+              "1280": {
+                slidesPerView: 3,
+              }
+            }}
             className="mySwiper "
           >
-            <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 1
-            </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10 ">
               <img src={sliderImg} alt="" className="w-full " />
               <div className="slide_content_box absolute left-[0%] top-[0%] text-left p-[30px] bg-[#1B1A1C] !rounded-[30px] z-10">
@@ -51,8 +71,8 @@ const Slider = () => {
                   <h2 className="text-[#E1E2EE] text-[25px] leading-[35px] font-medium p-2 mt-[10px] mb-[20px]">
                     Mutant Women Ape YC
                   </h2>
-                  <div className="flex justify-between mt-[24px]">
-                    <div>
+                  <div className="mtp_wrapper flex justify-between mt-[24px] ">
+                    <div className="item">
                       <span className="text-[#B4B5BD] opacity-70 leading-[25.6px]">
                         Mint Date
                       </span>
@@ -60,7 +80,7 @@ const Slider = () => {
                         18 Jan 2023
                       </h4>
                     </div>
-                    <div>
+                    <div className="item">
                       <span className="text-[#B4B5BD] opacity-70 leading-[25.6px]">
                         Total Supply
                       </span>
@@ -68,7 +88,7 @@ const Slider = () => {
                         18 Jan 2023
                       </h4>
                     </div>
-                    <div>
+                    <div className="item">
                       <span className="text-[#B4B5BD] opacity-70 leading-[25.6px]">
                         Publit Mint Price
                       </span>
@@ -101,35 +121,53 @@ const Slider = () => {
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
               <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon 
+              </h2>
+            </SwiperSlide>
+            <SwiperSlide className="slider__item !bg-opacity-10">
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
                 Coming Soon
               </h2>
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 3
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon
+              </h2>
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 4
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon
+              </h2>
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 5
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon
+              </h2>
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 6
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon
+              </h2>
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 7
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon
+              </h2>
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 8
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon
+              </h2>
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 9
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon
+              </h2>
             </SwiperSlide>
             <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 10
-            </SwiperSlide>
-            <SwiperSlide className="slider__item !bg-opacity-10">
-              Slide 11
+              <h2 className="text-[#B4B5BD] opacity-50 font-medium w-full ">
+                Coming Soon
+              </h2>
             </SwiperSlide>
           </Swiper>
         </div>
