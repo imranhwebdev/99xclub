@@ -3,6 +3,7 @@ import { BsDiscord, BsTwitter } from "react-icons/bs";
 import { FaTelegram } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 import bgAfter from "../assets/images/bg-hero-after.png";
+import siteLogo from "../assets/images/99x-logo.png"
 
 const Footer = () => {
   return (
@@ -18,7 +19,9 @@ const Footer = () => {
       <div className="max-w-[340px] mx-auto">
         <div className="text-center">
           <h2 className="text__style text-[25px] leading-[30px] font-bold">
-            99X CLUB
+            <a href="/" className="site-logo">
+              <img src={siteLogo} alt="" />
+            </a>
           </h2>
           <div>
             <ul className="flex gap-[42px] mt-[49px] justify-center">

@@ -317,3 +317,15 @@ details[open] summary p {
 .site-logo {
   max-width: 90px;
 }
+.header_area.sticky .header_wrapper{
+  padding: 0;
+}
+
+footer .site-logo img{
+  max-width: 90px;
+}
+footer .site-logo{
+  text-align: center;
+  margin:0 auto;
+  display: block;
+}

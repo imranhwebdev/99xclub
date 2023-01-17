@@ -34,11 +34,11 @@ const Header = () => {
       className={`
     ${
       isTrue
-        ? "sticky left-0 top-0 !bg-[#100f11] bg-opacity-75 "
+        ? "header_area sticky left-0 top-0 !bg-[#100f11] bg-opacity-75 "
         : "!bg-transparent bg-opacity-0 absolute top-0 left-0 w-full z-50"
-    }  z-50 transition ease-in-out delay-150 `}
+    }  z-50 transition ease-in-out delay-150 `} 
     >
-      <div className="max-w-[1200px] mx-auto py-4 px-4 md:px-0">
+      <div className="header_wrapper max-w-[1200px] mx-auto py-4 px-4 md:px-0">
         <div className="navbar px-4">
           <div className="navbar-start">
             <nav ref={ref} className="dropdown ">
