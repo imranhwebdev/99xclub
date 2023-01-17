@@ -388,4 +388,12 @@ footer .site-logo {
     margin-top: 30px;
     display: inline-block;
   }
+  .hero_area{
+    padding-top: 100px;
+  }
+}
+@media(max-width:480px){
+  .hero_area{
+    padding-top: 70px;
+  }
 }

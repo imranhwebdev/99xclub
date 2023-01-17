@@ -46,7 +46,7 @@ const Banner = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="relative " id="membership"
+      className="relative hero_area" 
     >
       {/* bg bottom */}
       <div

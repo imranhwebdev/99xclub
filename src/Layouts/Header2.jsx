@@ -45,7 +45,7 @@ const Nav = () => {
         : "!bg-transparent bg-opacity-0 absolute top-0 left-0 w-full z-50"
     }  z-50 transition ease-in-out delay-150 `} 
     >
-      <div className="md:flex items-center justify-between  py-4 md:px-10 px-7 max-w-[1230px] mx-auto">
+      <div className="flex items-center justify-between  py-4 md:px-10 px-7 max-w-[1230px] mx-auto">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
