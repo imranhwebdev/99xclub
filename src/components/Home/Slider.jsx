@@ -1,4 +1,5 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 import sliderImg from "../../assets/images/slider.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,20 +14,25 @@ import { Pagination, Navigation } from "swiper";
 import Button from "../../common/Button";
 
 const Slider = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+
+}, []);
   return (
     <section className="ninetynine_x_slider py-[100px] bg-[#080709]" id="affiliates">
       <div>
         <div className="section_title max-w-[659px] mx-auto text-center pb-[50px] md:pb-[100]">
-          <span className="text__style tracking-[0.2em] font-bold">
+          <span className="text__style tracking-[0.2em] font-bold"  data-aos="fade-up" data-aos-duration="800">
             REWARD SYSTEM
           </span>
-          <h2 className="text-[#E1E2EE] sm:text-[32px] leading-[35px] md:text-[49px] md:leading-[58.8px] font-bold p-2 mt-[10px] mb-[20px] text-[25px] ">
+          <h2 className="text-[#E1E2EE] sm:text-[32px] leading-[35px] md:text-[49px] md:leading-[58.8px] font-bold p-2 mt-[10px] mb-[20px] text-[25px] "  data-aos="fade-up" data-aos-duration="1000">
             Which are 12 Projects that will be launched by 99xclub team and
             their affiliates?
           </h2>
         </div>
         {/* slider code */}
-        <div>
+        <div  data-aos="fade-up" data-aos-duration="1200">
           <Swiper
             spaceBetween={30}
             slidesPerView={2.4}

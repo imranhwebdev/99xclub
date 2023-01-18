@@ -1,10 +1,15 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Accordion = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <section className="pt-[100px] pb-[1px] bg-[#080709]">
       <div className="max-w-[1020px] mx-auto" id="faq">
-        <details class="w-full bg-[#080709]  cursor-pointer mb-3">
+        <details class="w-full bg-[#080709]  cursor-pointer mb-3" data-aos="fade-up" data-aos-duration="800">
           <summary class="w-full bg-[#080709] text-[#B4B5BD] text-[25px] flex justify-between px-[20px] py-[31px]  after:content-['+']">
             What is the 99x Club Membership?
           </summary>
@@ -15,7 +20,7 @@ const Accordion = () => {
           </p>
         </details>
 
-        <details class="w-full bg-[#100f11]  cursor-pointer mb-3">
+        <details class="w-full bg-[#100f11]  cursor-pointer mb-3" data-aos="fade-up" data-aos-duration="1000">
           <summary class="w-full bg-[#100f11] text-[#B4B5BD] text-[25px] flex justify-between px-[20px] py-[31px] after:content-['+']">
             How to mint an 99x Club NFT Pass?
           </summary>
@@ -30,7 +35,7 @@ const Accordion = () => {
           </p>
         </details>
 
-        <details class="w-full bg-[#080709]  cursor-pointer mb-3">
+        <details class="w-full bg-[#080709]  cursor-pointer mb-3" data-aos="fade-up" data-aos-duration="1200">
           <summary class="w-full bg-[#080709] text-[#B4B5BD] text-[25px] flex justify-between px-[20px] py-[31px]  after:content-['+']">
             How long will the 99x Club membership last?
           </summary>
@@ -42,7 +47,7 @@ const Accordion = () => {
             condimentum arcu
           </p>
         </details>
-        <details class="w-full bg-[#100f11]  cursor-pointer mb-3">
+        <details class="w-full bg-[#100f11]  cursor-pointer mb-3" data-aos="fade-up" data-aos-duration="1400">
           <summary class="w-full bg-[#100f11] text-[#B4B5BD] text-[25px] flex justify-between px-[20px] py-[31px]  after:content-['+']">
             What are the benefits to hold 99x Club NFT Membership?
           </summary>

@@ -1,21 +1,27 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 import project2 from "../../assets/images/project2.png";
 import project1 from "../../assets/images/project1.png";
 import project3 from "../../assets/images/project3.png";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+
+}, []);
   return (
     <section className="bg-[#100f11] py-[80px]">
       <div className="max-w-[1230px] mx-auto px-4">
         <div className="xl:flex gap-[90px] relative">
           <div className="w-full xl:max-w-[682px]">
-            <span className="text__style tracking-[0.2em] mb-[10px] font-bold">
-            99XCLUB SERVICES
+            <span className="text__style tracking-[0.2em] mb-[10px] font-bold" data-aos="fade-up" data-aos-duration="800">
+              99XCLUB SERVICES
             </span>
-            <h2 className="text-[#E1E2EE] sm:text-[32px] leading-[35px] md:text-[49px] md:leading-[58.8px] font-bold pt-2 mt-[10px]  text-[25px] mb-[36px]">
+            <h2 className="text-[#E1E2EE] sm:text-[32px] leading-[35px] md:text-[49px] md:leading-[58.8px] font-bold pt-2 mt-[10px]  text-[25px] mb-[36px]" data-aos="fade-up" data-aos-duration="1000">
               Have you ever wondered to launch your own NFT project?
             </h2>
-            <p className="text-[#B4B5BD] opacity-80 text-[20px] leading-[30px] font-medium">
+            <p className="text-[#B4B5BD] opacity-80 text-[20px] leading-[30px] font-medium" data-aos="fade-up" data-aos-duration="1200">
               Our experienced team is here to guide you through the launch
               process of your NFT / Web3 / Defi project. Allow us to leverage
               our connections and use our reach to ensure that your hard work
@@ -32,13 +38,13 @@ const Projects = () => {
             </p>
           </div>
           <div className="w-full xl:max-w-[410px] h-[483px] ">
-            <div className="absolute right-[14%] -bottom-[13.5%] hidden xl:block">
+            <div className="absolute right-[14%] -bottom-[13.5%] hidden xl:block" >
               <img src={project1} alt="" />
             </div>
-            <div className="absolute -right-[10%] -top-[82px] hidden xl:block">
+            <div className="absolute -right-[10%] -top-[82px] hidden xl:block" data-aos="fade-down" data-aos-duration="1000">
               <img src={project3} alt="" />
             </div>
-            <div className="">
+            <div className="" data-aos="zoom-in" data-aos-duration="1000">
               <img src={project2} alt="" className="mx-auto mt-16 xl:mt-0" />
             </div>
           </div>

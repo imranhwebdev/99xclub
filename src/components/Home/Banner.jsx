@@ -89,7 +89,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="mt-[63px]">
-            <p className="text-[#E1E2EE] text-[25px] leading-[35px] font-medium " data-aos="fade-up" data-aos-duration="1100">
+            <p className="text-[#E1E2EE] text-[25px] leading-[35px] font-medium ">
               99xClub Pass Minting Starts In
             </p>
             <div className="grid grid-flow-col gap-2 sm:gap-5 text-center auto-cols-max justify-center mt-[33px] px-4">
