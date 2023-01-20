@@ -5,6 +5,7 @@ import BenefitsOfMinting from "../../components/Home/BenefitsOfMinting";
 import ClubNet from "../../components/Home/ClubNet";
 import MembershipPass from "../../components/Home/MembershipPass";
 import Projects from "../../components/Home/Projects";
+import ProjectTeam from "../../components/Home/projectTeam";
 import RewardSystem from "../../components/Home/RewardSystem";
 import Slider from "../../components/Home/Slider";
 
@@ -18,6 +19,7 @@ const Home = () => {
       <RewardSystem />
       <Slider />
       <Projects />
+      <ProjectTeam />
       <Accordion />
     </>
   );

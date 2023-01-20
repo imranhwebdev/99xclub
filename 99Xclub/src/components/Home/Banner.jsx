@@ -10,7 +10,7 @@ const Banner = () => {
     AOS.refresh();
 
 }, []);
-  const [countdownDate] = useState(new Date("Jan 21, 2023 20:30:00").getTime());
+  const [countdownDate] = useState(new Date("Feb 02, 2023 20:30:00").getTime());
   const [state, setState] = useState({
     days: 0,
     hours: 0,
